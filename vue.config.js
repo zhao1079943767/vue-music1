@@ -12,8 +12,9 @@ module.exports = {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('assets', resolve('src/assets'))
-      .set('pages', resolve('src/pages'))
+      .set('views', resolve('src/views'))
       .set('common', resolve('src/common'))
       .set('components', resolve('src/components'))
-  }
+  },
+  lintOnSave: false
 }
